@@ -34,6 +34,7 @@ def add_animal():
 
 
 @animals_blueprint.route("/animals/<int:animal_index>", methods=["GET"])
+@swag_from("docs/seeanimals.yml")
 def get_animal(animal_index):
     try:
         animal = animals[animal_index]

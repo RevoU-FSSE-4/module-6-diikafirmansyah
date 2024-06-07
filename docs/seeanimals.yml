@@ -1,0 +1,14 @@
+tags:
+  - Animals
+parameters:
+  - in: path
+    name: animal_index
+    required: true
+    schema:
+      type: integer
+responses:
+  200:
+    descripstion: "succesfull operation"
+  404:
+    description: "animal not found"
+
