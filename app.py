@@ -1,8 +1,13 @@
 from flask import Flask, request, jsonify 
 from flasgger import Swagger
+from animal import animals_blueprint
+from employe import employes_blueprint
+
 
 
 app = Flask(__name__)
+app.register_blueprint(animals_blueprint)
+app.register_blueprint(employes_blueprint)
 swagger = Swagger (app)
 
 
