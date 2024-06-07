@@ -8,7 +8,7 @@ parameters:
       type : object 
       properties : 
         animal : 
-          type :string 
+          type: string 
         animal : 
           type : string 
         food : 

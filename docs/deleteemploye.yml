@@ -1,7 +1,7 @@
 tags:
   - Employe
 parameters:
-  - name: animal_index
+  - name: employe_index
     in: path
     required: true
     type: integer

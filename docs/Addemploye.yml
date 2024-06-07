@@ -2,19 +2,19 @@ tags:
   - Employe
 parameters:
   - in : body 
-    name : employe
+    name : employes
     required : true
     schema :
       type : object 
       properties : 
-        animal : 
-          type :string 
-        animal : 
+        name : 
+          type: string 
+        gender : 
           type : string 
-        food : 
-          type : string 
+        age : 
+          type : number 
 responses : 
   201:
-    description : Animal added succesfully 
+    description : Employe added succesfully 
   400:
     description : Incomplete data provided

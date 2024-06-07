@@ -36,6 +36,7 @@ def add_employe():
 
 
 @employes_blueprint.route("/employes/<int:employe_index>", methods=["GET"])
+@swag_from("docs/seeemploye.yml")
 def get_employe(employe_index):
     try:
         employe = employes[employe_index]
@@ -59,6 +60,7 @@ def delete_employe(employe_index):
 
 
 @employes_blueprint.route("/employes/<int:employe_index>", methods=["PUT"])
+@swag_from("docs/updateemploye.yml")
 def put_emplpoye(employe_index):
     data = request.get_json()
     name = data.get("name")

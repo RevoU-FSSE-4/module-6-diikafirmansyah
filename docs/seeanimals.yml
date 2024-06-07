@@ -11,4 +11,3 @@ responses:
     descripstion: "succesfull operation"
   404:
     description: "animal not found"
-
