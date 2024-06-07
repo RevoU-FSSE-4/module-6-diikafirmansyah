@@ -1,0 +1,13 @@
+tags:
+  - Animals
+parameters:
+  - name: animal_index
+    in: path
+    required: true
+    type: integer
+    format: int64
+responses:
+  200:
+    description: "Pengguna berhasil dihapus"
+  404:
+    description: "Pengguna tidak ditemukan"

@@ -1,15 +1,18 @@
 from flask import Blueprint, request, jsonify
+from flasgger import swag_from
 
 employes_blueprint = Blueprint("employes", __name__)
 employes = []
 
 
 @employes_blueprint.route("/employes", methods=["GET"])
+@swag_from("docs/Allemploye.yml")
 def get_employes():
     return jsonify({"List of employes": employes}), 200
 
 
 @employes_blueprint.route("/employes", methods=["POST"])
+@swag_from("docs/Addemploye.yml")
 def add_employe():
     data = request.get_json()
     name = data.get("name")
@@ -42,6 +45,7 @@ def get_employe(employe_index):
 
 
 @employes_blueprint.route("/employes/<int:employe_index>", methods=["DELETE"])
+@swag_from("docs/deleteemploye.yml")
 def delete_employe(employe_index):
     try:
         del employes[employe_index]

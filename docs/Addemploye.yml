@@ -1,0 +1,20 @@
+tags:
+  - Employe
+parameters:
+  - in : body 
+    name : employe
+    required : true
+    schema :
+      type : object 
+      properties : 
+        animal : 
+          type :string 
+        animal : 
+          type : string 
+        food : 
+          type : string 
+responses : 
+  201:
+    description : Animal added succesfully 
+  400:
+    description : Incomplete data provided

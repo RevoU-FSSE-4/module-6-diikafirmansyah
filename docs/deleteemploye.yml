@@ -1,0 +1,13 @@
+tags:
+  - Employe
+parameters:
+  - name: animal_index
+    in: path
+    required: true
+    type: integer
+    format: int64
+responses:
+  200:
+    description: "Employe berhasil dihapus"
+  404:
+    description: "Employe tidak ditemukan"

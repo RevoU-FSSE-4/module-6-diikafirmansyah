@@ -1,0 +1,15 @@
+tags:
+  - Employe
+
+responses:
+  200:
+    description: Alist of animals
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            List of all animals:
+              type: array
+              items:
+                type: object

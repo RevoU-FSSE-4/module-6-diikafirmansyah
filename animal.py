@@ -44,6 +44,7 @@ def get_animal(animal_index):
 
 
 @animals_blueprint.route("/animals/<int:animal_index>", methods=["DELETE"])
+@swag_from("docs/deleteanimals.yml")
 def delete_animal(animal_index):
     try:
         del animals[animal_index]
@@ -54,6 +55,7 @@ def delete_animal(animal_index):
 
 
 @animals_blueprint.route("/animals/<int:animal_index>", methods=["PUT"])
+@swag_from("docs/updateanimals.yml")
 def put_animal(animal_index):
     data = request.get_json()
     animal = data.get("animal")
