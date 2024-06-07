@@ -8,6 +8,6 @@ parameters:
     format: int64
 responses:
   200:
-    description: "Employe berhasil dihapus"
+    description: "Employee has been kick out"
   404:
-    description: "Employe tidak ditemukan"
+    description: "Employee not found"
