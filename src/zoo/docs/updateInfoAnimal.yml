@@ -1,0 +1,26 @@
+tags:
+  - Animals
+parameters:
+  - name: animal_index
+    in: path
+    schema:
+      type: integer
+  - name: animal
+    in: body
+    required: True
+    schema:
+      type: object
+      properties:
+        animal:
+          type: string
+        age:
+          type: number
+        gender:
+          type: string
+        species:
+          type: string
+responses:
+  200:
+    description: "Succes to update animal"
+  400:
+    description: "Failed to update animal"

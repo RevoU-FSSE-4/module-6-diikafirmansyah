@@ -1,0 +1,24 @@
+tags:
+  - Employees
+parameters:
+  - name: employee_index
+    in: path
+    schema:
+      type: integer
+  - name: Employee
+    in: body
+    required: True
+    schema:
+      type: object
+      properties:
+        name:
+          type: string
+        age:
+          type: number
+        gender:
+          type: string
+responses:
+  200:
+    description: "Succes to update Employee data"
+  400:
+    description: "Failed to update employee"

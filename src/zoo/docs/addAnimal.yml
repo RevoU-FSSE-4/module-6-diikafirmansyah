@@ -1,0 +1,22 @@
+tags:
+  - Animals
+parameters:
+  - in: body
+    name: animal
+    required: true
+    schema:
+      type: object
+      properties:
+        animal:
+          type: string
+        age:
+          type: number
+        gender:
+          type: string
+        species:
+          type: string
+responses:
+  201:
+    description: Animal added successfully
+  400:
+    description: Incomplete data provided

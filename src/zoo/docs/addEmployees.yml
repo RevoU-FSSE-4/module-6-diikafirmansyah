@@ -1,0 +1,20 @@
+tags:
+  - Employees
+parameters:
+  - in: body
+    name: Employees
+    required: true
+    schema:
+      type: object
+      properties:
+        name:
+          type: string
+        age:
+          type: number
+        gender:
+          type: string
+responses:
+  201:
+    description: Animal added successfully
+  400:
+    description: Incomplete data provided

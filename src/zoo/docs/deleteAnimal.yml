@@ -8,6 +8,6 @@ parameters:
     format: int64
 responses:
   200:
-    description: "Pengguna berhasil dihapus"
+    description: "Successful Release Animal"
   404:
-    description: "Pengguna tidak ditemukan"
+    description: "Animal not found"

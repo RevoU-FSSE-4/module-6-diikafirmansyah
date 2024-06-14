@@ -1,7 +1,7 @@
 tags:
-  - Employe
+  - Employees
 parameters:
-  - name: employe_index
+  - name: employee_index
     in: path
     required: true
     type: integer
